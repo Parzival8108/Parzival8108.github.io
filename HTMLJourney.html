@@ -30,15 +30,39 @@
         li{
             float: left;
         }
-        li a{
-            display: block;
+        li a, .dropbtn{
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-        li a:hover{
+        li a:hover, .dropdown:hover .dropbtn{
             background-color: darkmagenta;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+         background-color: #f1f1f1;   
+        }
+        .dropdown-content:hover .dropdown-content{
+            display: block;
         }
         p{
             color: lightcyan;
@@ -52,13 +76,19 @@
     <body>
     <h1>The Start of My HTML Journey</h1>
         <ul>
-            <li><a class="active" href="HTMLJourney.html">Home</a></li>
+            <li class="dropdown">
+                <a href="HTMLJourney.html" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                    <a href="#march142022">March 14th, 2022</a>
+                    <a href="#march222022">March 22nd, 2022</a>
+                </div>
+            </li>
             <li><a href="resumePage.html">About Me</a></li>
         </ul>
-        <p><strong>March 14th, 2022-</strong> This is my first Attempt at writing using HTML. Seems to be working perfectly I am confused on a few things but I bet I will figure them out. I got entrigued to learn HTML through watching the netflix show "The Social Network".<br>
+        <p><a name="march142022"><strong>March 14th, 2022-</strong></a> This is my first Attempt at writing using HTML. Seems to be working perfectly I am confused on a few things but I bet I will figure them out. I got entrigued to learn HTML through watching the netflix show "The Social Network".<br>
         <img title="The Social Network on netflix" src="https://i.ytimg.com/vi/8IAGH6k17nw/maxresdefault.jpg" width="500" height="250"><br>
         This movie is a movie about Mark Zuckerburg who I don't have a fond liking for as a person but as the inventor of several different things including Meta, Instagram, and the Metaverse. I love the movie it seems to show the full start of the company that made Mr. Zuckerburg Wealthy famous and most known for being somewhat a genius somewhat psychotic with his ideas.<br>
-        <strong>March 22nd, 2022-</strong> I have been at school all day but I'm learning more and more about HTML in my free time. I have answered a few of my previous questions. You can probably see that with the update from the boring ass white background and blobs of comic sans text turning into colored backgrounds with some formality and different fonts. I have plenty of more questions to answer like how do I make buttons to make different pages to my website? How do I make a search bar? how can I make things move? (even though I think that would be done in CSS) There is plenty more questions to be answered and plenty to be learned. My uncle talked to me about getting a new job. My current job doesn't pay enough for the fact that it took years for me to learn to code and be as good as I am at coding so my family and I think that my job only paying $10 USD an hour isn't worth the time, effort, and stress it took to gain the skill.<br>
+            <a name="march222022"><strong>March 22nd, 2022-</strong></a> I have been at school all day but I'm learning more and more about HTML in my free time. I have answered a few of my previous questions. You can probably see that with the update from the boring ass white background and blobs of comic sans text turning into colored backgrounds with some formality and different fonts. I have plenty of more questions to answer like how do I make buttons to make different pages to my website? How do I make a search bar? how can I make things move? (even though I think that would be done in CSS) There is plenty more questions to be answered and plenty to be learned. My uncle talked to me about getting a new job. My current job doesn't pay enough for the fact that it took years for me to learn to code and be as good as I am at coding so my family and I think that my job only paying $10 USD an hour isn't worth the time, effort, and stress it took to gain the skill.<br>
         <strong>March 24th, 2022- </strong>I am starting to get really happy with my website, I figured out how to add buttons, buttons with images, and different pages too. I am really excited to keep going and learning, I just fixed up my resume page and added a home button to get back to the home screen. I also went back and decided to format the image of "the social network" and center it. I think it looks quite better and more appealing. I am excited to see whatelse I can do. My website still doesn't look the best but I still have a lot to go to do. I hate the color scheme on the home screen so I am gonna see if I can fix it I might go for a light blue text color with a black background. <strong>*A little bit later*</strong> I just fixed the color scheme on the home page going from a peach and indigo to a black and light blue color scheme. I think it looks a lot better. Light color schemes hurt my eyes a lot more, while dark color schemes seem more relaxed on my eyes.<br>
         <strong>April 12th, 2022-</strong> Sorry its been so long I have been gone because I am finally getting noticed for my ability to program. I have been asked to help with a few IB CAS projects. An IB CAS project is a finally project that IB colleges will look at when you apply. I didn't do the IB deploma so I am just helping and I will write it into my portfolio as a personal project. I redid my resume page and I changed it to an about me page. I added a wiki about me style table on the side and I am happy with it so far. I added a autobiography too and wrote a whole bunch for it. I don't know what I am gonna do with this but I am adding whatever comes to my mind.<br>
         <strong>April 14th, 2022-</strong> I decided to learn more CSS so I went and cleaned up my code with what I learned but I didn't end up learning much. I learned just enough to make my code look cleaner. it wasn't much but I love renovating my code.<br>
